@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "47351404093",
+    "firebase_url": "https://nugroho1-369fc.firebaseio.com",
+    "project_id": "nugroho1-369fc",
+    "storage_bucket": "nugroho1-369fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47351404093:android:6d57f19dddb20723",
+        "android_client_info": {
+          "package_name": "com.nug.karanganyar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47351404093-0ke6aib2488dr7vt7hpv1nfkdcjr01ss.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO-jS5PqH-VQ2bdlvuG8L6WT-RrV2qKoM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

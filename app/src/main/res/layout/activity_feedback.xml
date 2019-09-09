@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent_color"
+        android:minHeight="?attr/actionBarSize"
+        android:textAppearance="@style/TextAppearance.FontPath.Bold"
+        android:theme="@style/ActionBarThemeOverlay" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/main_menu_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_app_splash" />
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/app_name"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.FontPath.Bold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/txtAppDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="8dp"
+                    android:text="Informasikan Tempat wisata yang anda ketahui, Upload foto dan isi deskripsi nama tempat, alamat dan kontak yang bisa di hubungi."
+                    android:textColor="@color/about_description_color"
+                    android:textSize="@dimen/about_description_text_size" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/about_separator_color" />
+
+            <LinearLayout
+                android:id="@+id/con_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:visibility="gone">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Suggestion"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/about_separator_color" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Fullname :"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/addres"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ButtonChooseImage"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Sipono, S.Kom" />
+
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Place name   :"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/place"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ButtonChooseImage"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:hint="wisata jurug" />
+
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="addres   :"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ButtonChooseImage"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:hint="jl. bla bla bla" />
+
+
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description   :"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/des"
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:layout_below="@+id/ButtonChooseImage"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="wisata jurug adlah wisaya dimana bla bla bla bla" />
+
+
+            <TextView
+                android:id="@+id/textview8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Cordinate / longitude.latitude (optional)  :"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ImageNameEditText"
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ButtonChooseImage"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:hint="-7.575489 110.824326 " />
+
+
+            <TextView
+                android:id="@+id/textview6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Photo   :"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ShowImageView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/textview"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/ButtonChooseImage"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ShowImageView"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:theme="@style/MyButton2"
+                android:text="Choose Image" />
+
+
+
+            <TextView
+                android:id="@+id/textview7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="*Pastikan data di isi dengan valid untuk selanjutnya akan survey"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/ButtonUploadImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ImageNameEditText"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:theme="@style/MyButton2"
+                android:text="Send Sugestion" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
